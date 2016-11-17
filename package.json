@@ -1,0 +1,11 @@
+{
+  "name": "portfolio-code-camp",
+  "version": "1.0.0",
+  "description": "Portfolio project for Free Code Camp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LaVaughn Haynes",
+  "license": "ISC"
+}
