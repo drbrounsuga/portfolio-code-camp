@@ -1,8 +1,58 @@
 body{
-  background-color: tomato;
+  font-family: roboto, arial, sans-serif;
+  color: #fff;
+}
+
+
+.bkg-primary{
+  background-color: #FF8F00;
+}
+
+.bkg-primary-accent{
+  background-color: #FFECB3;
+}
+
+.bkg-secondary{
+  background-color: #95a5a6;
+}
+
+.bkg-tertiary{
+  background-color: #7f8c8d;
+}
+
+.bkg-light{
+  background-color: #ECEFF1;
 }
 
 .content-container{
   max-width: 1024px;
 }
 
+
+.centered{
+  text-align: center;
+}
+
+.padded-lg{
+  padding: 68px 20px;
+}
+
+.padded-md{
+  padding: 24px 20px;
+}
+
+.avatar{
+  border-radius: 50%;
+}
+
+
+h2{
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+p{
+  font-size: 1.5em;
+}

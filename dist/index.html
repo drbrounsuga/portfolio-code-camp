@@ -10,46 +10,49 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- change to cdn for live version -->
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
   </head>
 <body>
-
-  <header class="container content-container bg-info">
-    <h1 class="logo">Von Haynes</h1>
-    <nav>
-      <ul>
-        <li>About</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
+  
+  <nav id="main-nav" class="bkg-primary">
+    <div class="container content-container">
+      <a class="brand">Von Haynes</a>
+      <ul class="nav-bar">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
     
 
-  <div id="main-content" class="bg-primary">
-    
-    <div id="summary" class="container content-container">
-      <div class="row bg-primary">
-        <div class="col-md-8 bg-danger">
-          top left
+  <div id="main-content" class="bkg-tertiary">
+
+    <div id="summary" class="container content-container bkg-secondary">
+      <div class="row">
+        <div class="col-md-8">
+          <p>
+            Front-End Developer and UX/UI designer, with practical experience in project management, branding strategy, and creative direction; devoted to functional programming and information architecture.
+          </p>
         </div>
-        <div class="col-md-4 bg-info">
-          top right
+        <div class="col-md-4 centered bg-primary">
+          <img src="http://www.placehold.it/250x250" alt="Avatar" class="avatar">
         </div>
       </div>
     </div><!-- end #summary -->
     
-    <div id="portfolio" class="container content-container">
-      <div class="row bg-info">
+    <div id="portfolio" class="container content-container bkg-light">
+      <div class="row">
         <div class="col-md-12">
           <h2>Portfolio</h2>
         </div>
       </div>
       <div  class="row bg-info">
-        <div class="col-md-6 bg-success">
+        <div class="col-md-6">
           middle left
         </div>
-        <div class="col-md-6 bg-warning">
+        <div class="col-md-6">
           middle right
         </div>
       </div>
@@ -73,14 +76,14 @@
 
   </div><!-- end #main-contact -->
 
-  <section>
-    <div id="info" class="container-fluid">
-      <div class="row bg-primary">
-        <div class="col-sm-6 bg-danger">
+  <section id="info" class="bkg-secondary">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 centered padded-lg">
           <h2>About this page</h2>
           <p>Made with #### and ### by Von Haynes</p>
         </div>
-        <div class="col-sm-6 bg-info">
+        <div class="col-sm-6 centered padded-lg">
           <h2>Around the web</h2>
           <ul>
             <li>LinkedIn</li>
@@ -91,10 +94,12 @@
         </div>
       </div>
     </div>
-  </section>
+  </section><!-- end #info -->
 
-  <footer>
-    Von Haynes @copy; 2016. All Rights Reserved
+  <footer class="bkg-primary padded-md centered">
+    <p>
+      Von Haynes &copy; 2016. All Rights Reserved
+    </p>
   </footer>
 
   <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
