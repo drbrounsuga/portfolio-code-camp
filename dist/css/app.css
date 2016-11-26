@@ -3,49 +3,6 @@ body{
   color: #fff;
 }
 
-
-.bkg-primary{
-  background-color: #FF8F00;
-}
-
-.bkg-primary-accent{
-  background-color: #FFECB3;
-}
-
-.bkg-secondary{
-  background-color: #95a5a6;
-}
-
-.bkg-tertiary{
-  background-color: #7f8c8d;
-}
-
-.bkg-light{
-  background-color: #ECEFF1;
-}
-
-.content-container{
-  max-width: 1024px;
-}
-
-
-.centered{
-  text-align: center;
-}
-
-.padded-lg{
-  padding: 68px 20px;
-}
-
-.padded-md{
-  padding: 24px 20px;
-}
-
-.avatar{
-  border-radius: 50%;
-}
-
-
 h2{
   margin: 0;
   font-size: 1.8em;
@@ -55,4 +12,84 @@ h2{
 
 p{
   font-size: 1.5em;
+}
+
+/*
+---------------------------
+color classes
+---------------------------
+*/
+.bkg-primary{ background-color: #0099CC; }
+.bkg-primary-accent{ background-color: #CEEBF5; }
+.bkg-secondary{ background-color: #95a5a6; }
+.bkg-tertiary{ background-color: #7f8c8d; }
+.bkg-light{ background-color: #a3e8ff; }
+.fg-light{ color: #a3e8ff; }
+.content-container{ max-width: 1024px; }
+
+
+/*
+---------------------------
+general formatting classes
+---------------------------
+*/
+.centered{ text-align: center; }
+.padded-lg{ padding: 52px 25px; }
+.padded-md{ padding: 24px 25px; }
+.avatar{ border-radius: 50%; }
+.linked{
+  color: #a3e8ff;
+  text-decoration: none;
+  transition: color 500ms;
+}
+.linked:hover{ color: #FFEEBC; }
+
+
+
+/*
+---------------------------
+social media styles
+---------------------------
+*/
+.info-col h2{
+  margin-bottom: 1em;
+}
+.social-media{
+  padding: 0;
+  list-style-type: none;
+  font-size: 1.6em;
+}
+.social-media li,
+.social-media i,
+.social-media a{
+  display: inline-block;
+}
+
+.social-media li{ margin: 0 2px; }
+.social-media i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social-media a{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: color 500ms, background-color 500ms;
+}
+
+.social-media a:hover{
+  background-color: #fff;
+  color: #0099CC;
+}
+
+
+@media screen and (max-width: 767px){
+  .padded-lg{ padding: 32px 15px; }
 }
