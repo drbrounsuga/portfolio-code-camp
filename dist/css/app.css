@@ -46,6 +46,48 @@ general formatting classes
 
 
 
+
+/*
+---------------------------
+main nav styles
+---------------------------
+*/
+.main-nav{
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  height: 80px;
+}
+.nav-bar,
+.nav-bar li{
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+}
+.nav-bar{
+  list-style-type: none;
+}
+.nav-bar a{
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+  border: 1px solid #ff0000;
+}
+
+
+
+/*
+---------------------------
+###############
+---------------------------
+*/
+.main-content{
+  padding-top: 80px;
+}
+
+
 /*
 ---------------------------
 social media styles
