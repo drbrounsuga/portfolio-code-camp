@@ -25,7 +25,10 @@ color classes
 .bkg-tertiary{ background-color: #7f8c8d; }
 .bkg-light{ background-color: #a3e8ff; }
 .fg-light{ color: #a3e8ff; }
-.content-container{ max-width: 1024px; }
+.content-container{ 
+  position: relative;
+  max-width: 1024px; 
+}
 
 
 /*
@@ -52,11 +55,31 @@ general formatting classes
 main nav styles
 ---------------------------
 */
+.main-nav,
+.main-nav .container{
+  height: 80px;
+}
 .main-nav{
   position: fixed;
   z-index: 20;
   width: 100%;
-  height: 80px;
+}
+.brand,
+.nav-bar{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav-bar{
+  right: 0;
+  list-style-type: none;
+}
+.brand{
+  display: inline-block;
+  left: 20px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1.5em;
 }
 .nav-bar,
 .nav-bar li{
@@ -64,18 +87,30 @@ main nav styles
   list-style-type: none;
   margin: 0;
 }
-.nav-bar{
-  list-style-type: none;
-}
 .nav-bar a{
   display: inline-block;
+  position: relative;
   padding: 10px 20px;
   text-decoration: none;
   color: #fff;
   font-size: 1.5em;
-  border: 1px solid #ff0000;
+  transition: background-color 200ms;
 }
-
+.nav-bar a::before{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  transform: skew(-20deg);
+  transition: background-color 200ms;
+}
+.nav-bar a:hover::before{
+  background-color: #3fbee9;
+}
 
 
 /*
@@ -99,7 +134,7 @@ social media styles
 .social-media{
   padding: 0;
   list-style-type: none;
-  font-size: 1.6em;
+  font-size: 1.5em;
 }
 .social-media li,
 .social-media i,
