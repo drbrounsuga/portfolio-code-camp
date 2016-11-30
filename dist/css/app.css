@@ -19,7 +19,10 @@ p{
 color classes
 ---------------------------
 */
-.bkg-primary{ background-color: #0099CC; }
+.bkg-primary{ 
+  background: #1773CE;
+  background: linear-gradient(to right, #1773CE, #17ACCF);
+}
 .bkg-primary-accent{ background-color: #CEEBF5; }
 .bkg-secondary{ background-color: #95a5a6; }
 .bkg-tertiary{ background-color: #7f8c8d; }
@@ -55,6 +58,38 @@ general formatting classes
 main nav styles
 ---------------------------
 */
+.nav-bar-collapsed{
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #fff;
+  width: 30px;
+  height: 30px;
+}
+.nav-bar-collapsed .bar,
+.nav-bar-collapsed::before,
+.nav-bar-collapsed::after{
+  display: inline-block;
+  position: absolute;
+  background-color: #ff0000;
+  height: 30px;
+  width: 4px;
+  top: 0;
+}
+.nav-bar-collapsed .bar{
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav-bar-collapsed::before{
+  content: '';
+  left: 0;
+}
+.nav-bar-collapsed::after{
+  content: '';
+  right: 0;
+}
 .main-nav,
 .main-nav .container{
   height: 80px;
@@ -109,7 +144,7 @@ main nav styles
   transition: background-color 200ms;
 }
 .nav-bar a:hover::before{
-  background-color: #3fbee9;
+  background-color: rgba(63, 190, 233, 0.8);
 }
 
 
